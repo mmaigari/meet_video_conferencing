@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/toolsa"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btnJoin"
+    style="@style/OutlinedButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="5dp"
+    android:text="@string/rejoin"
+    android:drawableEnd="@drawable/ic_plus_item"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/txtName"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="16dp"
+    android:textColor="?android:attr/textColorPrimary"
+    android:textSize="@dimen/text_size_m"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/txtDate"
+    app:layout_constraintEnd_toStartOf="@+id/btnJoin"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed"
+    tools:text="jetJIKskKne" />
+
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/txtDate"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:textColor="?android:attr/textColorSecondary"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@+id/txtName"
+    app:layout_constraintStart_toStartOf="@+id/txtName"
+    app:layout_constraintTop_toBottomOf="@+id/txtName"
+    tools:text="Last joined 23 minutes ago" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtDuration"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_duration"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/secondaryText"
+        android:gravity="center"
+        android:text="@string/_00_00"
+        android:textColor="@color/secondaryText"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtDate"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+
+    <LinearLayout
+        android:id="@+id/llDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnJoin"
+        app:layout_constraintEnd_toEndOf="@+id/btnJoin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:gravity="center">
+
+        <ImageView
+            android:backgroundTint="@color/red_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_delete"
+            />
+
+    </LinearLayout>
+
+    <com.daimajia.swipe.SwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:visibility="visible"
+            style="@style/OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+
+
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

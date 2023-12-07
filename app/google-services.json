@@ -1,0 +1,139 @@
+{
+  "project_info": {
+    "project_number": "468765116897",
+    "firebase_url": "https://vidxa-video-conferencing.firebaseio.com",
+    "project_id": "vidxa-video-conferencing",
+    "storage_bucket": "vidxa-video-conferencing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468765116897:android:c632d2925231eb9f0e2aa0",
+        "android_client_info": {
+          "package_name": "com.infusiblecoder.vidxa_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468765116897-d8h17vk4ehcfgmnvkkgu9rt178l7llok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.infusiblecoder.vidxa_flutter",
+            "certificate_hash": "9ebfbaf96b856bdba6dc80cb503ca3b3a06ccc22"
+          }
+        },
+        {
+          "client_id": "468765116897-hf6acsr9tdi7pchvua7fb6aqgqt08mbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.infusiblecoder.vidxa_flutter",
+            "certificate_hash": "9538ada9eada3e420dc099dcc5c6ca1e9111a745"
+          }
+        },
+        {
+          "client_id": "468765116897-qa5oertt13p6ehp7ptrgobio6vadjta8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDGPUylfyleFUvF0ncKq1kpJBhc5ed9HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468765116897-qa5oertt13p6ehp7ptrgobio6vadjta8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "468765116897-sgfscmuinpl5duncv6hk90hr91htg4c4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aneeq.com-pip-app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468765116897:android:1bd5237a5291986e0e2aa0",
+        "android_client_info": {
+          "package_name": "usama.utech.vidxa_video_conferencing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468765116897-4c6la439scmj6l7lml5q3reno248q5qn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "usama.utech.vidxa_video_conferencing",
+            "certificate_hash": "9ebfbaf96b856bdba6dc80cb503ca3b3a06ccc22"
+          }
+        },
+        {
+          "client_id": "468765116897-7rl0iipq365so39m010nuggkt07p13tl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "usama.utech.vidxa_video_conferencing",
+            "certificate_hash": "86f4e4f477ee3b321c5042418ce8f6054bef2fae"
+          }
+        },
+        {
+          "client_id": "468765116897-lfc68lqre6kfme0lmcjpi7c5cnr6513v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "usama.utech.vidxa_video_conferencing",
+            "certificate_hash": "7098d4ba5a300672ef9e8e30dadfcd63b490728e"
+          }
+        },
+        {
+          "client_id": "468765116897-lrkd14sbev52q4fgfoj1nd0gmf07u5ac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "usama.utech.vidxa_video_conferencing",
+            "certificate_hash": "af3cdb2bab58540c6fa0aeb41abb3240f380ecc1"
+          }
+        },
+        {
+          "client_id": "468765116897-mrlgkuuesi17beesphqtn6j1cg2cmb60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "usama.utech.vidxa_video_conferencing",
+            "certificate_hash": "d7a1f71e3cd2267f2ea6a01b5ef38da846bd3426"
+          }
+        },
+        {
+          "client_id": "468765116897-qa5oertt13p6ehp7ptrgobio6vadjta8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDGPUylfyleFUvF0ncKq1kpJBhc5ed9HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468765116897-qa5oertt13p6ehp7ptrgobio6vadjta8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "468765116897-sgfscmuinpl5duncv6hk90hr91htg4c4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aneeq.com-pip-app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

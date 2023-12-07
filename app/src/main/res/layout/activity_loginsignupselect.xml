@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBg"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.LoginSignupSelectActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <com.github.florent37.shapeofview.shapes.CutCornerView
+            android:id="@+id/clipCorner"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            app:shape_cutCorner_bottomRightSize="20dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+        </com.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+        <com.github.florent37.shapeofview.shapes.CutCornerView
+            android:layout_width="match_parent"
+            android:id="@+id/cutcorner"
+            android:layout_height="100dp"
+            android:elevation="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="40dp"
+            app:shape_cutCorner_bottomRightSize="20dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/hi_nwelcome"
+                android:textAppearance="@style/FontPath.SemiBold"
+                android:textColor="@color/white"
+                android:textSize="33sp" />
+
+        </com.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_appicon"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+
+                android:text="@string/app_name"
+                android:textAppearance="@style/FontPath.Medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+
+                android:text="@string/a_video_conferencing_app"
+                android:textAppearance="@style/FontPath.Medium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnJoin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/join_a_meeting"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="8dp"
+                app:rippleColor="@color/colorPrimaryTrans" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/signup"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="8dp"
+                app:elevation="0dp"
+                app:rippleColor="@color/colorPrimaryRipple" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/signin"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="8dp"
+                app:elevation="0dp"
+                app:rippleColor="@color/colorPrimaryRipple" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

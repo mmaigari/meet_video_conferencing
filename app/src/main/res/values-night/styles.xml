@@ -1,0 +1,119 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+        <item name="materialCardViewStyle">@color/colorPrimary</item>
+        <item name="materialButtonStyle">@color/colorPrimary</item>
+
+        <item name="android:textColorHint">@color/grey_active</item>
+        <item name="android:textColorSecondary">@color/secondaryText</item>
+        <item name="android:textColorPrimary">@color/secondaryText</item>
+        <item name="subtitleTextColor">@color/secondaryText</item>
+        <item name="titleTextColor">@color/secondaryText</item>
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FontPath.Italic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_italic.ttf</item>
+    </style>
+
+    <style name="FontPath.Regular" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_regular.ttf</item>
+    </style>
+
+    <style name="FontPath.Medium" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_medium.ttf</item>
+    </style>
+
+
+    <style name="FontPath.Light" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_light.ttf</item>
+    </style>
+
+    <style name="FontPath.SemiBold" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_semi_bold.ttf</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">15dp</item>
+        <item name="cornerSizeTopRight">15dp</item>
+    </style>
+
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="FilledButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- The launcher theme. It sets the main window background to the launch_screen drawable -->
+
+    <!--styles for app-->
+    <!--df dialog-->
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@color/contentTextColor</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="viewParent.headerText.NoMode">
+        <item name="android:textColor">@color/darkTextColor</item>
+    </style>
+
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="loginButton" parent="viewParent">
+        <item name="android:background">@drawable/button_background_blue</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="spinnerHintText" parent="parent">
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+
+</resources>

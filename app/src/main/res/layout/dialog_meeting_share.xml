@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.shapeofview.shapes.DiagonalView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:shape_diagonal_angle="10"
+    app:shape_diagonal_direction="right"
+    app:shape_diagonal_position="bottom"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_close"
+                android:backgroundTint="@color/white" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/copy_to_invite_others"
+            android:textAppearance="@style/FontPath.SemiBold"
+            android:textColor="@color/whiteTextColor"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:layout_marginTop="10dp"
+            android:text="@string/copy_and_share_this_code_with_people_that_you_want_to_meet_with"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:weightSum="6"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="6"
+                android:id="@+id/txtMeetingURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="ffff"
+                android:textAlignment="center"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:backgroundTint="@color/white"
+                android:background="@drawable/ic_copy"
+                android:id="@+id/imgCopy"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:layout_marginTop="10dp"
+            android:text="@string/copy_and_share_this_code_pc_or_web"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:weightSum="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="6"
+                android:id="@+id/txtMeetingcodeUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="ffff"
+                android:textAlignment="center"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:backgroundTint="@color/white"
+                android:background="@drawable/ic_copy"
+                android:id="@+id/imgCopycodeUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_meeting"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            style="@style/FilledButton"
+            android:layout_marginBottom="5dp"
+            app:rippleColor="@color/colorPrimaryRipple"
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInviteEmail"
+            style="@style/OutlinedButton"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:text="@string/inviteemail"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/design_default_color_primary_dark"
+            app:cornerRadius="8dp"
+            app:rippleColor="@color/colorPrimaryRipple" />
+
+    </LinearLayout>
+
+</com.github.florent37.shapeofview.shapes.DiagonalView>

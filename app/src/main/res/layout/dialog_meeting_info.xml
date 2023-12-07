@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.shapeofview.shapes.DiagonalView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_gravity="center"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:shape_diagonal_angle="10"
+    app:shape_diagonal_direction="right"
+    app:shape_diagonal_position="bottom"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/meeting_saved"
+
+            android:textAppearance="@style/FontPath.SemiBold"
+            android:textColor="@color/whiteTextColor"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:id="@+id/txtName"
+                    android:text="@string/my_meeting"
+                    android:textAppearance="@style/FontPath.Medium"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/whiteTextColor" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:id="@+id/txtDate"
+                    android:text="@string/_00_00"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/whiteTextColor" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:id="@+id/txtTime"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/_00_00"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/whiteTextColor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/add_to_calendar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/white"
+                    style="@style/FilledButton"
+                    app:cornerRadius="8dp"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="1.5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:elevation="5dp"
+                    android:elevation="5dp"
+                    android:text="@string/done"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteTextColor"
+                    style="@style/FilledButton"
+                    app:backgroundTint="@color/colorAccent"
+                    app:cornerRadius="8dp"
+                    app:rippleColor="@color/colorPrimaryRipple" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</com.github.florent37.shapeofview.shapes.DiagonalView>
